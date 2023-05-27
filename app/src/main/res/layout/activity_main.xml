@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bezheviy"
+    tools:context=".MainActivity">
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Counter"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/textView"
+        app:layout_constraintVertical_bias="0.02"
+        />
+
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Имя"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"/>
+
+
+
+    <EditText
+        android:id="@+id/Ves"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:ems="20"
+        android:inputType="number"
+        android:hint="Вес"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Name"/>
+
+
+    <EditText
+        android:id="@+id/Rost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ves"
+        android:ems="20"
+        android:inputType="number"
+        android:hint="Рост"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Ves"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Готово"
+        android:background="@drawable/round_btn"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="507dp"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+
+        android:onClick="nextList"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

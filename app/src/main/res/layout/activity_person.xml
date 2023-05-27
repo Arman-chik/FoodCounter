@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bezheviy"
+    tools:context=".PersonActivity">
+
+
+    <TextView
+        android:id="@+id/PersName"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PersVes"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PersName" />
+
+    <TextView
+        android:id="@+id/PersRost"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PersVes" />
+
+
+    <TextView
+        android:id="@+id/PersCals"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PersRost" />
+
+
+    <TextView
+        android:id="@+id/PersUgl"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="76dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PersRost" />
+
+    <TextView
+        android:id="@+id/PersZhiri"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="128dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PersRost" />
+
+    <TextView
+        android:id="@+id/PersBelki"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="176dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PersRost" />
+
+
+    <Button
+        android:id="@+id/ButtonOchist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="380dp"
+        android:background="@drawable/round_btn"
+        android:onClick="onResetCounterClicked"
+        android:text="Очистить"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ListView
+        android:id="@+id/products_lv"
+        android:layout_width="335dp"
+        android:layout_height="163dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@id/dobavit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/dobavit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="128dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/round_btn"
+        android:onClick="nextList"
+        android:text="Добавить\n новый продукт"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
